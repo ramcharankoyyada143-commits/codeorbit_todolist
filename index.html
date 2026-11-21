@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Task Manager | To-Do List</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Task Manager</div>
+        <p>Organize your work and stay productive.</p>
+    </header>
+
+
+    <!-- Main Container -->
+    <main class="container">
+
+        <!-- Welcome Section -->
+        <section class="welcome">
+            <h1>My Daily Tasks</h1>
+            <p>Plan your day and complete your goals.</p>
+        </section>
+
+
+        <!-- Task Statistics -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <h2 id="totalTasks">0</h2>
+                <p>Total Tasks</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="pendingTasks">0</h2>
+                <p>Pending</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="completedTasks">0</h2>
+                <p>Completed</p>
+            </div>
+
+        </section>
+
+
+        <!-- Add Task Section -->
+        <section class="add-task">
+
+            <h2>Add a New Task</h2>
+
+            <div class="input-group">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter your task here..."
+                    autocomplete="off"
+                >
+
+                <button id="addBtn">+ Add Task</button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Task Filter -->
+        <section class="task-section">
+
+            <div class="task-heading">
+                <h2>My Tasks</h2>
+
+                <div class="filter-buttons">
+
+                    <button class="filter-btn active" data-filter="all">
+                        All
+                    </button>
+
+                    <button class="filter-btn" data-filter="pending">
+                        Pending
+                    </button>
+
+                    <button class="filter-btn" data-filter="completed">
+                        Completed
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Task List -->
+            <ul id="taskList">
+
+                <!-- Tasks will be added using JavaScript -->
+
+            </ul>
+
+            <p id="emptyMessage">
+                No tasks found. Add a task to get started!
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Created by Ramcharan Koyyada | 2026</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
